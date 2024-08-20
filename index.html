@@ -1,50 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swagat Acharya</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
+
 <body>
     <header>
-        <center>
-            <h1 style="border: 2px solid red;padding: 10px; " >Swagat Acharya's Portfolio</h1>
-        </center>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Eduation</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+
+            </ul>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/swagat-acharya-408221224/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/Swagatacharya" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <!-- Add more social media links as needed -->
+            </ul>
+        </nav>
     </header>
-    
-    <main>
-        
-           <div> <img src="image/IMG20210708142259.jpg" style="width:240px;" > </div>
-        
-        <br>
+
+    <section id="home">
+        <div class="hero">
+            <!-- <img src="DSC0035.jpg" alt="Hero Image"> -->
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm Swagat Acharya, a Java Developer , Web Enthusiast and SQl Learner.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm an Electronics Undergrad at Veer Surendra Sai University of Technology . I'm passionate about web development, graphic designing, electronics and dance. My expertise includes Java, MySQL, HTML, CSS, JavaScript, .</p>
+    </section>
+
+    <!-- <section id="skills">
+        <h2>My Skills</h2>
         <ul>
-            <li>Hey! there,I am Swagat Acharya from Bargarh,Odisha. </li>
-            <li>i am 19 year old guy who is interested in Dancing, coding ,listening to Music and watching anime. </li>
-            <li>My aim is to do something great for my country and take my country to greater heights. </li>
+            <li>Java</li>
+            <li>MySQL</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
         </ul>
-    
+    </section> -->
 
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-filter">
+            <button class="filter-btn" data-filter="java">Java</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <!-- Add more filter buttons as needed -->
+        </div>
+        <div class="project-grid">
+            <div class="project-card" data-category="java">
+                <h3>Currency Converter</h3>
+                <h5>Java</h5>
+                <p>Used java to create a Currency Converter program </p>
+            </div>
+            <div class="project-card" data-category="web">
+                <h3>Portfolio</h3>
+                <div id="langs">
+                    <h5>HTML  CSS  JavaScript</h5>
+                </div>
+                <p>Made a portfolio to showcase my projects and achievements</p>
+            </div>
+            <div class="project-card" data-category="web">
+                <h3>To Do</h3>
+                <div id="langs">
+                    <h5>HTML  CSS  JavaScript</h5>
+                </div>
+                <p>A website to record the task t be done and to remove that task when it is done.</p>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
         
-        <br><br>
-        <a href="education.html" target="_blank"><button class="s"> Education</button></a>
-        
-        <a href="Contact.html" target="_blank"><button class="s">Contact</button></a>
-        <hr>
-        
-    </main>
-    <hr>
-    <footer>
+            <li>BTech in Electronics and Telecommunications from Veer Surendra Sai University of Technology , Burla </li>
+            <li>Intermediate from Vikash Residential School , Bargarh</li>
+            <li>Matriculation from Vikash Residential School , Bargarh</li>
+       
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
         <form>
-            <label for="email">Your Email address</label>
-            <input type="text" id="email" name="email">
-            <br>
-            <input type="submit">
-
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
         </form>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
     </footer>
-     
+
+    <script src="script.js"></script>
 </body>
+
 </html>
